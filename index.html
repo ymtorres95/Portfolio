@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Yanis Front End Developer Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- To top button-->
+    <button onclick="scrollToTop()" id="scrollToTop" title="Go to Top">
+      Top
+    </button>
+
+    <header>
+      <!--Navigation Menu-->
+      <button id="menu-button" onClick="sideMenu()" title="Show Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="side-menu">
+        <ul>
+          <li><a href="#home">Home</li></a>
+          <li><a href="#about">About</li></a>
+          <li><a href="#skills">Skills</li></a>
+          <li><a href="#work">Work</li></a>
+          <li><a href="#connect">Connect</li></a>
+        </ul>
+      </div>
+
+      <!--Header Section-->
+      <div class="home-title">
+        <div class="i-photo">
+          <!--Background Pic-->
+          <figure>
+            <img
+              src="/Users/macbook/Desktop/Skillcrush/profile/img/Logo.png"
+              alt="image of YT front end developer logo"
+              id="profile-image"
+            />
+          </figure>
+        </div>
+
+        <div class="home-name" id="home">
+          <h1>Yanis Torres</h1>
+          <i class="fa-solid fa-code fa-2x"></i>
+          <h2>Front End Web Developer</h2>
+          <div class="scrolling-text-container">
+            <div class="scrolling-text">
+              Athletic Trainer | Tech Lover | Animal Lover | Mother of 1 | Funko Pop Collector
+            </div>
+        </div>
+
+
+      </div>
+    </header>
+
+    <main>
+      <!--About Me Section-->
+      <section id="about">
+        <div class="content-wrapper">
+          <h3>About Me!</h3>
+          <div class="half-content">
+            <!--Add Pictue of Me-->
+            <figure>
+              <img
+                src="/Users/macbook/Desktop/Skillcrush/profile/img/IMAG0459.jpeg"
+                alt="photo of Yanis Torres"
+                id="about-photo"
+              />
+            </figure>
+            <p class="about-text">
+              Hey! I am <span>Yanis Torres.</span><br />
+              <br />
+              <!--About Me-->
+              <br />
+              I am currently an Athletic Trainer in a
+              secondary school based in Charlotte. After 7+ years of impacting,
+              growing, and providing high quality healthcare to our future
+              athletes, I am ready to follow my passion in tech! I am ready for
+              a new challenge: creating and designing interactive and
+              mesmerizing web pages!
+              <br/>
+              <br/>
+              I am ready to experience the feeling of creating something that
+              everyone will interact with. I want to fullfill my love for tech
+              and solving puzzles.
+              <br />
+              <br/>
+              A little more about me: I am originally from Mexico City, but moved to Charlotte, NC when I was only 4 years old. I love sports! I can talk about any sport! I
+              also collect Funko Pops for the nostalgia and invesment benefit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Skills Section-->
+      <section id="skills">
+        <div class="content-wrapper">
+          <h3>Skills</h3>
+          <div class="cardbox">
+            <div class="under-cardbox">
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/Html5.png" alt="HTML5 logo" />
+                </div>
+                <div class="caption">HTML5</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/CSS.png" alt="CSS3 logo" />
+                </div>
+                <div class="caption">CSS3</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/JavaScript-Logo.png" alt="Javascript logo" />
+                </div>
+                <div class="caption">Javascript</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/VScode.png" alt="VS Code Logo" />
+                </div>
+                <div class="caption">VS Code</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/github.png" alt="Github logo" />
+                </div>
+                <div class="caption">Github</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/git.png" alt="Git logo" />
+                </div>
+                <div class="caption">Git</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/devtools.jpeg" alt="Chrome Dev Tools logo" />
+                </div>
+                <div class="caption">Chrome Dev Tools</div>
+              </div>
+              <div class="card">
+                <div class="cardimg">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/react.png" alt="React logo" />
+                </div>
+                <div class="caption">React</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section-->
+      <section class="portfolio" id="work">
+        <div class="content-wrapper">
+          <h3>Projects</h3>
+          <div class="portfolio-wrapper">
+            <div class="portfolio-piece">
+              <figure>
+                <a href="file:///Users/macbook/Desktop/Skillcrush/responsive-rogue-pickings/index.html#contact" target="_blank">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/rogue.png" alt="Rogue Pickings Website" />
+                </a>
+              </figure>
+              <h4>Rogue Pickings</h4>
+              <p class="project-description">
+                Rogue pickings is a simple site designed following a design comp provided. Although simple, this site sets to attract future customers or provide current customers with more information about their business.
+              </p>
+              <p class="project-description">
+                <span>Skills:</span>
+                CSS3, Flexbox, HTML5, Media Queries, Responsive Typographys
+              </p>
+            </div>
+            <div class="portfolio-piece">
+              <figure>
+                <a href="file:///Users/macbook/Desktop/Skillcrush/unplugged-project/index.html" target="_blank">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/unplugged.png" alt="Unplugged Website" />
+                </a>
+              </figure>
+              <h4>Unplugged</h4>
+              <p class="project-description">
+                A multi-page, fully responsive website built from a design comp. Unplugged is a retreat targeting companies and professionals to help refresh. Thanks to HTML, CSS, Flexbox and Visual Studio Code this website is fully functional on mobile, tablet and desktop screens.
+              </p>
+              <p class="project-description">
+                <span>Skills:</span>
+                CSS3, Flexbox,HTML5, Media Queries, Responsive Typography
+              </p>
+            </div>
+            <div class="portfolio-piece">
+              <figure>
+                <a href="file:///Users/macbook/Desktop/Skillcrush/guess-the-word-main/index.html" target="_blank">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/GuesstheWorld.png" alt="Guess the Word Website" />
+                </a>
+              </figure>
+              <h4>Guess the Word Game</h4>
+              <p class="project-description">
+                An interactive JavaScript game where players have to guess one letter at a time. Guess all the letters correctly in limited attempts and you win! The game shows the use of HTML, CSS and vanilla JavaScript to bring the online experience to life.
+              </p>
+              <p class="project-description">
+                <span>Skills:</span>
+                Manipulate DOM & Vanilla JavaScript
+              </p>
+            </div>
+            <div class="portfolio-piece">
+              <figure>
+                <a href="https://5x5zlc.csb.app/" target="_blank">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/Booking.png" alt="Hotel Booking App" />
+                </a>
+              </figure>
+              <h4>Hotel Booking App</h4>
+              <p class="project-description">
+                A hotel booking app that assists in finding the perfect hotel to meet all your needs. Filter hotels based on amenities that are most important for your stay. Although the site is not fully functional, it is allowing the demonstration of skills set to allow this specific function.
+              </p>
+              <p class="project-description">
+                <span>Skills:</span>
+                ES6, JSX, Manipulate DOM
+              </p>
+            </div>
+            <div class="portfolio-piece">
+              <figure>
+                <a href="https://n7r3yl.csb.app/" target="_blank">
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/Stickynotes.png" alt="Sticky Note App" />
+                </a>
+              </figure>
+              <h4>Sticky Note App</h4>
+              <p class="project-description">
+                An interactive React app that allows users to create virtual “sticky notes” in addition to edit, delete, and search for specific notes. App allows users to store notes for future reference.
+              </p>
+              <p class="project-description">
+                <span>Skills:</span>
+                JSX, ES6, Manipulate DOM
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section-->
+    <footer id="connect">
+      <div class="content-wrapper">
+        <h3>Get in Touch!</h3>
+        <div class="content-wrapper">
+          <div class="contact-info">
+            <!-- Add Contact Info -->
+            <div class="linkedin">
+              <a href="https://www.linkedin.com/in/yanis-torres-lat-scat-atc-b0b345117/" target="_blank" title="LinkedIn">
+                <img src="/Users/macbook/Desktop/Skillcrush/profile/img/linkedin-icon-2048x2048-ya5g47j2.png" alt="LinkedIn Logo" />
+              </a>
+            </div>
+            <div class="github">
+              <a href="https://github.com/ymtorres95" target="_blank" title="GitHub">
+                <img src="/Users/macbook/Desktop/Skillcrush/profile/img/github-logo-footer.jpg" alt="GitHub Logo" />
+              </a>
+            </div>
+          </div>
+          <p class="copyright">Copyright 2023 | Yanis Torres<div class="heart"></div></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
