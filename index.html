@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script> src="/Users/macbook/Desktop/Skillcrush/profile/js/app.js" </script>
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
@@ -36,20 +37,16 @@
 
     <header>
       <!--Navigation Menu-->
-      <button id="menu-button" onClick="sideMenu()" title="Show Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div id="side-menu">
-        <ul>
-          <li><a href="#home">Home</li></a>
-          <li><a href="#about">About</li></a>
-          <li><a href="#skills">Skills</li></a>
-          <li><a href="#work">Work</li></a>
-          <li><a href="#connect">Connect</li></a>
-        </ul>
+      <div id="mySidebar" class="sidebar">
+        <div class="closebtn" onclick="closeNav()">×</div>
+        <div><a href="#home">Home</a></div>
+        <div><a href="#about">About Me</a></div>
+        <div><a href="#skills">Skills</a></div>
+        <div><a href="#work">Projects</a></div>
+        <div><a href="#connect">Contact</a></div>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">Menu</button>
       </div>
 
       <!--Header Section-->
@@ -150,7 +147,7 @@
               </div>
               <div class="card">
                 <div class="cardimg">
-                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/github.png" alt="Github logo" />
+                  <img src="/Users/macbook/Desktop/Skillcrush/profile/img/github-logo-footer.jpg" alt="Github logo" />
                 </div>
                 <div class="caption">Github</div>
               </div>

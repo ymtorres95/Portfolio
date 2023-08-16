@@ -17,18 +17,12 @@ function scrollToTop() {
 }
 
 // nav menu
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-window.onload = function () {
-  const menuButton = document.getElementById("menu-button");
-};
-
-const menuButton = document.getElementById("menu-button");
-const sideMenu = document.getElementById("side-menu");
-
-menuButton.addEventListener("click", function () {
-  if (sideMenu.style.display === "none") {
-    sideMenu.style.display = "block";
-  } else {
-    sideMenu.style.display = "none";
-  }
-});
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}

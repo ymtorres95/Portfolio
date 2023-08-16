@@ -224,55 +224,42 @@ header .content-wrapper {
 }
 
 /* Nav Button */
-#menu-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 9999;
-  cursor: pointer;
-  padding: 10px;
-}
-
-#menu-button span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin-bottom: 5px;
-  transition: 0.3s;
-}
-
-#side-menu {
+.sidebar {
+  height: 100%;
+  width: 0;
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100vh;
-  background-color: #be9e44;
-  transition: left 0.3s ease-in-out;
-  z-index: 9998;
-  display: none;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-#side-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#side-menu li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-#side-menu li:hover {
-  background-color: #e5d9b6;
-}
-
-#side-menu {
+.sidebar div {
+  padding: 8px 8px 8px 30px;
+  font-size: 24px;
   display: block;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #d8c690;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
 /* Text Scroll */
 .scrolling-text-container {
   width: 300px;
@@ -345,6 +332,10 @@ header .content-wrapper {
   font-size: 1.1em;
 }
 /* Skills */
+
+#skills {
+  background-color: #000;
+}
 
 .skills .content-wrapper {
   width: 100%;
@@ -486,13 +477,13 @@ footer .contact-info {
 }
 
 .linkedin {
-  width: 40%;
+  width: 25%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .github {
-  width: 52%;
+  width: 30%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
